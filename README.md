@@ -1,9 +1,17 @@
 # 🌌 Project Axiom Analytics
 
-[![Deploy to Surge](https://img.shields.io/badge/Deploy%20to-Surge-00ADEE?style=for-the-badge&logo=surge&logoColor=white)](https://surge.sh)
+[![Live Dashboard](https://img.shields.io/badge/Live-Dashboard-aa3bff?style=for-the-badge&logo=react&logoColor=white)](https://project-axiom-analytics.surge.sh)
+[![Documentation Portal](https://img.shields.io/badge/Intelligence-Outpost-blueviolet?style=for-the-badge&logo=gitbook&logoColor=white)](https://project-axiom-portal.surge.sh)
 [![GDPR Compliant](https://img.shields.io/badge/GDPR-Compliant-success?style=for-the-badge)](https://gdpr.eu)
 
-An ultra-premium, cookie-less, GDPR-compliant web analytics engine built for the next generation of the web. **Project Axiom** provides real-time traffic visualization without sacrificing user privacy.
+### Ultra-premium, cookie-less, GDPR-compliant web analytics engine. 
+Build for speed, beauty, and privacy-first intelligence. Project Axiom provides real-time traffic visualization without sacrificing user privacy.
+
+---
+
+## 🏛️ The Outpost
+- **Live Dashboard**: [project-axiom-analytics.surge.sh](https://project-axiom-analytics.surge.sh)
+- **Documentation & Playbook**: [project-axiom-portal.surge.sh](https://project-axiom-portal.surge.sh)
 
 ---
 
