@@ -31,19 +31,24 @@ Deploy your own Axiom instance in seconds:
 
 ---
 
-## 🛠️ Usage
-Embed the tracking script in any website's `<head>`:
+---
+
+## 🛠️ Universal Ingestion
+Embed the **Project Axiom** protocol into any website's `<head>` to begin real-time, privacy-hardened event capture.
 
 ```html
 <script 
   defer 
-  src="https://your-axiom-instance.surge.sh/axiom.js" 
-  data-site-id="YOUR_SITE_ID"
+  src="https://project-axiom-analytics.surge.sh/axiom.js" 
+  data-id="YOUR_SITE_ID"
   data-endpoint="https://your-axiom-instance.surge.sh/api/collect">
 </script>
 ```
 
-### Advanced Events
+### 🧠 The `data-id` Parameter
+The `data-id` (UUID) is your unique protocol identifier. Upon ingestion, Axiom's Sentinel brain verifies the ID and begins streaming metrics to your high-fidelity dashboard. No cookies are set, and no private data (IP/UA) is ever recorded.
+
+### ⚡ Advanced Events
 Track custom interactions using the global `axiom` object:
 ```javascript
 axiom.collect('conversion', { value: 99.00 });

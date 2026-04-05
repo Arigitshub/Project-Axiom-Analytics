@@ -1,40 +1,42 @@
 @import "tailwindcss";
 
 @theme {
-  --color-primary: #aa3bff;
-  --color-primary-dark: #c084fc;
+  --color-electric: #00f2ff;
+  --color-electric-dark: #00c2cc;
+  --color-charcoal: #121214;
 }
 
 :root {
-  --text: #6b6375;
-  --text-h: #08060d;
-  --bg: #fff;
-  --border: #e5e4e7;
-  --accent: #aa3bff;
-  --accent-bg: rgba(170, 59, 255, 0.1);
-  --shadow: rgba(0, 0, 0, 0.1) 0 10px 15px -3px, rgba(0, 0, 0, 0.05) 0 4px 6px -2px;
-}
-
-@media (prefers-color-scheme: dark) {
-  :root {
-    --text: #9ca3af;
-    --text-h: #f3f4f6;
-    --bg: #16171d;
-    --border: #2e303a;
-    --accent: #c084fc;
-    --shadow: rgba(0, 0, 0, 0.4) 0 10px 15px -3px, rgba(0, 0, 0, 0.25) 0 4px 6px -2px;
-  }
+  --text: #ffffff;
+  --bg: #121214;
+  --card: rgba(30, 30, 33, 0.7);
+  --border: rgba(255, 255, 255, 0.1);
+  --accent: #00f2ff;
+  --shadow: rgba(0, 0, 0, 0.5) 0 10px 15px -3px;
 }
 
 body {
-  @apply bg-[var(--bg)] text-[var(--text)] antialiased;
-  font-family: system-ui, -apple-system, sans-serif;
+  @apply bg-[#121214] text-white antialiased selection:bg-[#00f2ff]/30;
+  font-family: 'Outfit', 'Inter', system-ui, sans-serif;
 }
 
 .glass {
-  @apply backdrop-blur-md bg-white/10 border border-white/20 shadow-xl;
+  @apply backdrop-blur-xl bg-white/5 border border-white/10 shadow-2xl;
 }
 
-.card {
-  @apply bg-[var(--bg)] border border-[var(--border)] rounded-2xl p-6 transition-all hover:border-[var(--accent)] hover:shadow-lg;
+.card-vibe {
+  @apply rounded-3xl p-8 bg-white/5 border border-white/10 transition-all duration-300;
+  @apply hover:border-electric/30 hover:shadow-[0_0_40px_rgba(0,242,255,0.1)];
+}
+
+.electric-glow {
+  @apply shadow-[0_0_20px_rgba(0,242,255,0.4)];
+}
+
+::-webkit-scrollbar {
+  @apply w-1;
+}
+
+::-webkit-scrollbar-thumb {
+  @apply bg-electric/20 rounded-full hover:bg-electric/40;
 }
